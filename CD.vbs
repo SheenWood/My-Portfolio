@@ -27,4 +27,3 @@ Next 'null
 
 set owmp = nothing
 set colCDROMs = nothing
-© 2020 GitHub, Inc.
