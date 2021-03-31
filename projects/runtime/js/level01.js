@@ -84,17 +84,17 @@ var level01 = function (window) {
         }
         //functions calls
         createSawBlade(2000, 200);
-        createSawBlade(500, 350);
-        createSawBlade(3000, 350); 
+        createSawBlade(500, 300);
+        createSawBlade(3000, 300); 
  createSawBlade(500, 150);
-         createSawBlade(2000, 350); 
-        createSawBlade(600, 350);
-         createSawBlade(6560, 350); 
-        createSawBlade(1650, 350); 
-        createSawBlade(2690, 350);
-        createSawBlade(3700, 350); 
-        createSawBlade(4711, 450); 
-        createSawBlade(5755, 350);
+         createSawBlade(2000, 300); 
+        createSawBlade(600, 300);
+         createSawBlade(6560, 300); 
+        createSawBlade(1650, 300); 
+        createSawBlade(2690, 300);
+        createSawBlade(3700, 300); 
+        createSawBlade(4711, 400); 
+        createSawBlade(5755, 300);
     
 
         createEnemy(700, 300);
