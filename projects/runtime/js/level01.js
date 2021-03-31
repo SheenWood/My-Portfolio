@@ -87,8 +87,14 @@ var level01 = function (window) {
         createSawBlade(500, 250);
         createSawBlade(3000, 300); 
  createSawBlade(500, 250);
-         createSawBlade(550, 250); createSawBlade(600, 250);
-         createSawBlade(560, 250); createSawBlade(650, 250); createSawBlade(690, 250); createSawBlade(700, 250); createSawBlade(711, 250); createSawBlade(755, 250);
+         createSawBlade(550, 250); 
+        createSawBlade(600, 250);
+         createSawBlade(560, 250); 
+        createSawBlade(650, 250); 
+        createSawBlade(690, 250);
+        createSawBlade(700, 250); 
+        createSawBlade(711, 250); 
+        createSawBlade(755, 250);
     
 
         createEnemy(700, 300);
