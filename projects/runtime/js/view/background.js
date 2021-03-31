@@ -43,8 +43,8 @@ var background = function (window) {
             var moon = draw.bitmap('img/moon.png');
                 moon.x = canvasWidth / 1.2;
                 moon.y = canvasHeight / 8;
-                moon.scaleX = 0.39;
-                moon.scaleY = 0.5;
+                moon.scaleX = 1;
+                moon.scaleY = 1;
             background.addChild(moon);
             
             var loopsCompleted = 0; 
