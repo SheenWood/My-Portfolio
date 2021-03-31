@@ -48,7 +48,7 @@ var background = function (window) {
             background.addChild(moon);
             
             var loopsCompleted = 0; 
-            while (loopsCompleted < 6000) {
+            while (loopsCompleted < 700) {
             var circle = draw.circle(1,'white','LightGray',2);
             circle.x = canvasWidth*Math.random();
             circle.y = groundY*Math.random();
