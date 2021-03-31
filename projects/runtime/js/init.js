@@ -36,11 +36,9 @@ var init = function (window) {
     view.addChild(background);
     
     var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct! IF PLAYER DOES NOT LOAD REFRESH PAGE', 
-        '20px Arial',
+        '15px Arial',
         '#ccc', 'left');
-    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct! IF PLAYER DOES NOT LOAD REFRESH PAGE', 
-        '30px Arial',
-        '#ccc', 'left');
+   
     help.x = 10;
     help.y = ground.y + ground.getBounds().height + 10;
     view.addChild(help);
