@@ -64,6 +64,22 @@ var level01 = function (window) {
             }
         }
 
+
+
+ function taco (x, y) {
+        var hitZoneSize = 25;
+        var dmg = 100000;
+        var taco = game.createObstacle(hitZoneSize, damageFromObstacle);
+        sawBladeHitZone.x = x;
+        sawBladeHitZone.y = y;
+        game.addGameItem(sawBladeHitZone);    
+        var obstacleImage = draw.bitmap('img/taco.png');
+        obstacleImage.x = -25;
+        obstacleImage.y = -25;
+        obstacleImage.z = -25;
+        sawBladeHitZone.addChild(obstacleImage);
+        }
+
         function createReward (x, y) {
         var reward = game.createGameItem('reward',25);
         var greenSquare = draw.rect(50,50,'green');
@@ -155,6 +171,7 @@ var level01 = function (window) {
         
         createReward(770, 300);
         createReward(3000, 300);
+        taco(900, 300)
         // DO NOT EDIT CODE BELOW HERE
     }
 };
