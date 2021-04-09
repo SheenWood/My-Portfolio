@@ -17,21 +17,41 @@ var level01 = function (window) {
             "speed": -3,
             "gameItems": [
                 { "type": "sawblade", "x": 500, "y": 200 },
-                { "type": "sawblade", "x": 3000, "y": 300 },
+                { "type": "sawblade", "x": 800, "y": 300 },
                 { "type": "sawblade", "x": 600, "y": 300 },
-                { "type": "sawblade", "x": 2000, "y":300 },
-                { "type": "sawblade", "x": 6560, "y": 300 },
-                { "type": "sawblade", "x": 1650, "y": 300 },
-                { "type": "sawblade", "x": 2690, "y":300 },
-{ "type": "enemy", "x": 2690, "y": 200 },
+                { "type": "sawblade", "x": 1000, "y":300 },
+                { "type": "sawblade", "x": 730, "y": 300 },
+                { "type": "sawblade", "x": 900, "y": 300 },
+                { "type": "sawblade", "x": 69, "y":300 },
+{ "type": "enemy", "x": 78, "y": 200 },
 { "type": "taco", "x": 420, "y": 190 },
 { "type": "clean", "x": 2690, "y": 190 },
 
             ]
         };
+        
+        
+        for (i = 0; i < levelData.gameItems.length; i++) {
+            var firstGameItemObject = levelData.gameItems[i];
+            var firstX = firstGameItemObject.x;
+            var firstY = firstGameItemObject.y;
+            var firstType = firstGameItemObject.type;
+            
+            if (firstType === "sawblade") {
+                createSawBlade(firstX, firstY);
+            } else if (firstType === "reward") {
+                createReward(firstX, firstY);
+            } else if (firstType === "enemy") {
+                createEnemy(firstX, firstY);
+            }  else if (firstType === "taco") {
+                createtaco(firstX, firstY);
+            } else {
+                createclean(firstX, firstY);  
+            }
+        }
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
-        game.setDebugMode(true);
+        game.setDebugMode(false);
 
         // TODO 6 and on go here
         // BEGIN EDITING YOUR CODE HERE
