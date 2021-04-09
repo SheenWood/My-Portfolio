@@ -16,9 +16,17 @@ var level01 = function (window) {
             "number": 1, 
             "speed": -3,
             "gameItems": [
-                { "type": "sawblade", "x": 400, "y": groundY },
-                { "type": "sawblade", "x": 600, "y": groundY },
-                { "type": "sawblade", "x": 900, "y": groundY },
+                { "type": "sawblade", "x": 500, "y": 200 },
+                { "type": "sawblade", "x": 3000, "y": 300 },
+                { "type": "sawblade", "x": 600, "y": 300 },
+                { "type": "sawblade", "x": 2000, "y":300 },
+                { "type": "sawblade", "x": 6560, "y": 300 },
+                { "type": "sawblade", "x": 1650, "y": 300 },
+                { "type": "sawblade", "x": 2690, "y":300 },
+{ "type": "enemy", "x": 2690, "y": 200 },
+{ "type": "taco", "x": 420, "y": 190 },
+{ "type": "clean", "x": 2690, "y": 190 },
+
             ]
         };
         window.levelData = levelData;
@@ -123,102 +131,18 @@ var level01 = function (window) {
         createSawBlade(2000, 200);
         createSawBlade(500, 300);
         createSawBlade(3000, 300); 
- createSawBlade(500, 150);
          createSawBlade(2000, 300); 
         createSawBlade(600, 300);
          createSawBlade(6560, 300); 
         createSawBlade(1650, 300); 
         createSawBlade(2690, 300);
-        createSawBlade(3700, 300); 
-        createSawBlade(4711, 400); 
-        createSawBlade(5755, 300);
+
     
 
-        createEnemy(700, 300);
-        createEnemy(701, 300);
-        createEnemy(702, 300);
-        createEnemy(703, 300);
-        createEnemy(704, 300);
-        createEnemy(705, 300);
-        createEnemy(706, 300);
-        createEnemy(707, 300);
-        createEnemy(708, 300);
-        createEnemy(709, 300);
-        createEnemy(710, 300);
-        createEnemy(711, 300);
-        createEnemy(712, 300);
-        createEnemy(713, 300);
-        createEnemy(714, 300);
-        createEnemy(715, 300);
-        createEnemy(716, 300);
-        createEnemy(717, 300);
-        createEnemy(718, 300);
-        createEnemy(719, 300);
-        createEnemy(720, 300);
-        createEnemy(721, 300);
-        createEnemy(722, 300);
-        createEnemy(723, 300);
-        createEnemy(724, 300);
-        createEnemy(725, 300);
-        createEnemy(726, 300);
-        createEnemy(727, 300);
-        createEnemy(728, 300);
-        createEnemy(729, 300);
-        createEnemy(730, 300);
-        createEnemy(731, 300);
-        createEnemy(732, 300);
-        createEnemy(733, 300);
-        createEnemy(734, 300);
-        createEnemy(735, 300);
-        createEnemy(736, 300);
-        createEnemy(737, 300);
-        createEnemy(738, 300);
-        createEnemy(739, 300);
-        createEnemy(740, 300);
-        createEnemy(741, 300);
-        createEnemy(742, 300);
-        createEnemy(743, 300);
-        createEnemy(744, 300);
-        createEnemy(745, 300);
-        createEnemy(746, 300);
-        createEnemy(747, 300);
-        createEnemy(748, 300);
-        createEnemy(749, 300);
-        createEnemy(750, 300);
-        createEnemy(751, 300);
-        createEnemy(752, 300);
-        createEnemy(753, 300);
-        createEnemy(754, 300);
-        
-        createReward(770, 300);
-        createReward(3000, 300);
-        createtaco(900, 170);
- createtaco(900, 170);
- createtaco(1000, 170);
- createtaco(34423, 170);
- createtaco(23423, 170);
- createtaco(231, 170);
- createtaco(123, 170);
- createtaco(897, 170);
- createtaco(2524, 170);
- createtaco(6969, 170);
- createtaco(6535, 170);
- createtaco(123132, 170);
- createtaco(355, 170);
- createtaco(347, 170);
- createtaco(3985, 170);
- createclean(123123, 170);
-createclean(5567, 170);
-createclean(4646, 170);
-        createclean(3443, 170);
-        createclean(65645, 170);
-        createclean(5456, 170);
-        createclean(123132, 170);
-        createclean(76575, 170);
-        createclean(789656, 170);
-        createclean(879789243, 170);
+ createEnemy(78,200)
 
-
+ createtaco(420,190)
+         createclean(234,190)
         // DO NOT EDIT CODE BELOW HERE
     }
 };
