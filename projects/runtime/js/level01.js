@@ -75,7 +75,7 @@ var level01 = function (window) {
         
          function createtaco (x, y) {
         var hitZoneSize = 25;
-        var damageFromObstacle = 100000;
+        var damagefromtaco = 100000;
         var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
@@ -90,7 +90,7 @@ var level01 = function (window) {
         
          function createclean (x, y) {
         var hitZoneSize = 25;
-        var damageFromObstacle = -100000;
+        var damagefromclean = -100000;
         var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
@@ -148,14 +148,14 @@ var level01 = function (window) {
             }
         }
         //functions calls
-        createSawBlade(2000, 200);
-        createSawBlade(500, 300);
-        createSawBlade(3000, 300); 
-         createSawBlade(2000, 300); 
-        createSawBlade(600, 300);
-         createSawBlade(6560, 300); 
-        createSawBlade(1650, 300); 
-        createSawBlade(2690, 300);
+        createSawBlade(500, 200);
+        createSawBlade(800, 300);
+        createSawBlade(600, 300); 
+         createSawBlade(1000, 300); 
+        createSawBlade(700, 300);
+         createSawBlade(830, 300); 
+        createSawBlade(900, 300); 
+        createSawBlade(69, 300);
 
     
 
