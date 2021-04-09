@@ -60,7 +60,18 @@ var level01 = function (window) {
         
         
         
-        
+         function createclean (x, y) {
+        var hitZoneSize = 25;
+        var damageFromObstacle = -100000;
+        var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+        sawBladeHitZone.x = x;
+        sawBladeHitZone.y = y;
+        game.addGameItem(sawBladeHitZone);    
+        var obstacleImage = draw.bitmap('img/clean.png');
+        obstacleImage.x = -25;
+        obstacleImage.y = -25;
+        sawBladeHitZone.addChild(obstacleImage);
+        }
         
         
         
@@ -182,6 +193,32 @@ var level01 = function (window) {
         createReward(770, 300);
         createReward(3000, 300);
         createtaco(900, 170);
+ createtaco(900, 170);
+ createtaco(1000, 170);
+ createtaco(34423, 170);
+ createtaco(23423, 170);
+ createtaco(231, 170);
+ createtaco(123, 170);
+ createtaco(897, 170);
+ createtaco(2524, 170);
+ createtaco(6969, 170);
+ createtaco(6535, 170);
+ createtaco(123132, 170);
+ createtaco(355, 170);
+ createtaco(347, 170);
+ createtaco(3985, 170);
+ createclean(123123, 170);
+createclean(5567, 170);
+createclean(4646, 170);
+        createclean(3443, 170);
+        createclean(65645, 170);
+        createclean(5456, 170);
+        createclean(123132, 170);
+        createclean(76575, 170);
+        createclean(789656, 170);
+        createclean(879789243, 170);
+
+
         // DO NOT EDIT CODE BELOW HERE
     }
 };
