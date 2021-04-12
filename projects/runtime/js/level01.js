@@ -155,9 +155,9 @@ var level01 = function (window) {
         createSawBlade(900, 300); 
     
 
-    createclean2(690, 100);
 
-    createclean2(1000, 100);
+
+    createclean2(2000, 100);
         
             createclean2(2500, 100);
             createclean2(3000, 100);
