@@ -94,7 +94,7 @@ var level01 = function (window) {
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
         game.addGameItem(sawBladeHitZone);    
-        var obstacleImage = draw.bitmap('img/sawblade.png');
+        var obstacleImage = draw.bitmap('img/clean.png');
         obstacleImage.x = -25;
         obstacleImage.y = -25;
         sawBladeHitZone.addChild(obstacleImage);
