@@ -128,7 +128,7 @@ function createbat (x, y) {
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
         game.addGameItem(sawBladeHitZone);    
-        var obstacleImage = draw.bitmap('img/clean.png');
+        var obstacleImage = draw.bitmap('img/batman.png');
         obstacleImage.x = 25;
         obstacleImage.y = -25;
              obstacleImage.z = 25;
