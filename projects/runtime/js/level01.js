@@ -38,7 +38,7 @@ var level01 = function (window) {
             var firstType = firstGameItemObject.type;
             
             if (firstType === "sawblade") {
-           /*     createSawBlade(firstX, firstY);
+           createSawBlade(firstX, firstY);
             } else if (firstType === "reward") {
                 createReward(firstX, firstY);
             } else if (firstType === "enemy") {
@@ -48,7 +48,7 @@ var level01 = function (window) {
             } else {
                 createclean(firstX, firstY);  
             }
-        }*/
+        
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
         game.setDebugMode(false);
