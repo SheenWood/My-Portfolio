@@ -85,20 +85,21 @@ var level01 = function (window) {
         
         
         
-         function createclean (x, y) {
+       
+        
+        function createclean2 (x, y) {
         var hitZoneSize = 25;
-        var damagefromclean = -100000;
+        var damageFromObstacle = 10;
         var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
         game.addGameItem(sawBladeHitZone);    
-        var obstacleImage = draw.bitmap('img/clean.png');
+        var obstacleImage = draw.bitmap('img/sawblade.png');
         obstacleImage.x = -25;
         obstacleImage.y = -25;
         sawBladeHitZone.addChild(obstacleImage);
         }
-        
-        
+
         
         
         function createEnemy (x, y) {
@@ -154,7 +155,7 @@ var level01 = function (window) {
         createSawBlade(900, 300); 
         createSawBlade(69, 300);
 
-    createclean(69, 420);
+    createclean2(69, 100);
 
  createEnemy(78,200)
 
