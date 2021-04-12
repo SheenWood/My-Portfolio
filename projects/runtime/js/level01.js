@@ -177,7 +177,18 @@ function createbat (x, y) {
          createtaco2(2000, 200);
         createReward(630, 200);
         
-        createbat(69, 250);
+        createbat(3535, 250);
+         createbat(234234, 250);
+         createbat(342, 250);
+         createbat(5545, 250);
+         createbat(54344, 250);
+         createbat(867678, 250);
+         createbat(323, 250);
+          createbat(4324, 250);
+          createbat(432234, 250);
+          createbat(1132, 250);
+          createbat(13233333, 250);
+          createbat(1231, 250);
         // DO NOT EDIT CODE BELOW HERE
     }
 };
