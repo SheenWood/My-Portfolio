@@ -154,12 +154,11 @@ var level01 = function (window) {
         createSawBlade(900, 300); 
         createSawBlade(69, 300);
 
-    
+    createclean(69, 420);
 
  createEnemy(78,200)
 
- createtaco(420,190)
-         createclean(234,190)
+
         // DO NOT EDIT CODE BELOW HERE
     }
 };
