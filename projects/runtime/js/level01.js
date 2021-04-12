@@ -48,7 +48,7 @@ var level01 = function (window) {
             } else {
                 createclean(firstX, firstY);  
             }
-        
+        }
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
         game.setDebugMode(false);
