@@ -122,14 +122,14 @@ var level01 = function (window) {
 
 
 function createbat (x, y) {
-        var hitZoneSize = 40;
+        var hitZoneSize = 25;
         var damageFromObstacle = 100000;
         var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
         game.addGameItem(sawBladeHitZone);    
         var obstacleImage = draw.bitmap('img/batman.png');
-        obstacleImage.x = 25;
+        obstacleImage.x = -25;
         obstacleImage.y = -25;
              obstacleImage.z = 25;
         sawBladeHitZone.addChild(obstacleImage);
