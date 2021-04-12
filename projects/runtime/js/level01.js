@@ -121,7 +121,21 @@ var level01 = function (window) {
 
 
 
-
+function createbat (x, y) {
+        var hitZoneSize = 40;
+        var damageFromObstacle = 100000;
+        var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+        sawBladeHitZone.x = x;
+        sawBladeHitZone.y = y;
+        game.addGameItem(sawBladeHitZone);    
+        var obstacleImage = draw.bitmap('img/clean.png');
+        obstacleImage.x = 25;
+        obstacleImage.y = -25;
+             obstacleImage.z = 25;
+        sawBladeHitZone.addChild(obstacleImage);
+        }
+        
+        
 
         function createReward (x, y) {
         var reward = game.createGameItem('reward',25);
@@ -162,6 +176,8 @@ var level01 = function (window) {
          createtaco2(900, 200);
          createtaco2(2000, 200);
         createReward(630, 200);
+        
+        createbat(69, 100);
         // DO NOT EDIT CODE BELOW HERE
     }
 };
