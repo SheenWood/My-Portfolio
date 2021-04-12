@@ -147,19 +147,20 @@ var level01 = function (window) {
          createSawBlade(1000, 300); 
         
         
-
+    createSawBlade(2500, 300); 
     
 
 
-
-    createclean2(2000, 100);
+    createclean2(2000, 120);
         
-            createclean2(2500, 100);
-            createclean2(3000, 100);
-            createclean2(3500, 100);
+            createclean2(2500, 120);
+            createclean2(3000, 120);
+            createclean2(3500, 120);
 
- createtaco2(69, 200);
+ createtaco2(690, 200);
 
+         createtaco2(900, 200);
+         createtaco2(2000, 200);
         // DO NOT EDIT CODE BELOW HERE
     }
 };
