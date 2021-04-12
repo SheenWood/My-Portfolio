@@ -123,7 +123,7 @@ var level01 = function (window) {
 
 function createbat (x, y) {
         var hitZoneSize = 25;
-        var damageFromObstacle = 100000;
+        var damageFromObstacle = 20;
         var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
@@ -176,7 +176,11 @@ function createbat (x, y) {
          createtaco2(900, 200);
          createtaco2(2000, 200);
         createReward(630, 200);
-        
+        createReward(876, 200);
+        createReward(73854, 200);
+        createReward(423342, 200);
+        createReward(7866, 200);
+        createReward(897, 200);
         createbat(3535, 250);
          createbat(234234, 250);
         
