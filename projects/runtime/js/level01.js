@@ -148,12 +148,11 @@ var level01 = function (window) {
         }
         //functions calls
         createSawBlade(500, 200);
-        createSawBlade(800, 300);
        
          createSawBlade(1000, 300); 
         
         
-        createSawBlade(900, 300); 
+
     
 
 
@@ -164,7 +163,7 @@ var level01 = function (window) {
             createclean2(3000, 100);
             createclean2(3500, 100);
 
- createtaco2(69, 100);
+ createtaco2(69, 200);
 
         // DO NOT EDIT CODE BELOW HERE
     }
