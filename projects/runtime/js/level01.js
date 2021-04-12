@@ -177,7 +177,7 @@ function createbat (x, y) {
          createtaco2(2000, 200);
         createReward(630, 200);
         
-        createbat(69, 300);
+        createbat(69, 250);
         // DO NOT EDIT CODE BELOW HERE
     }
 };
