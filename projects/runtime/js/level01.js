@@ -148,16 +148,20 @@ var level01 = function (window) {
         //functions calls
         createSawBlade(500, 200);
         createSawBlade(800, 300);
-        createSawBlade(600, 300); 
+       
          createSawBlade(1000, 300); 
-        createSawBlade(700, 300);
-         createSawBlade(830, 300); 
+        
+        
         createSawBlade(900, 300); 
-        createSawBlade(69, 300);
+    
 
-    createclean2(69, 100);
+    createclean2(690, 100);
 
- createEnemy(78,200)
+    createclean2(1000, 100);
+        
+            createclean2(2500, 100);
+            createclean2(3000, 100);
+            createclean2(3500, 100);
 
 
         // DO NOT EDIT CODE BELOW HERE
