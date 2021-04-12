@@ -23,9 +23,6 @@ var level01 = function (window) {
                 { "type": "sawblade", "x": 730, "y": 300 },
                 { "type": "sawblade", "x": 900, "y": 300 },
                 { "type": "sawblade", "x": 69, "y":300 },
-{ "type": "enemy", "x": 78, "y": 200 },
-{ "type": "taco", "x": 420, "y": 190 },
-{ "type": "clean", "x": 2690, "y": 190 },
 
             ]
         };
@@ -39,14 +36,14 @@ var level01 = function (window) {
             
             if (firstType === "sawblade") {
            createSawBlade(firstX, firstY);
-            } else if (firstType === "reward") {
+         /*   } else if (firstType === "reward") {
                 createReward(firstX, firstY);
             } else if (firstType === "enemy") {
                 createEnemy(firstX, firstY);
             }  else if (firstType === "taco") {
                 createtaco(firstX, firstY);
             } else {
-                createclean(firstX, firstY);  
+                createclean(firstX, firstY);  */
             }
         }
         window.levelData = levelData;
