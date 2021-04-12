@@ -69,19 +69,19 @@ var level01 = function (window) {
         
         
         
-        
-         function createtaco (x, y) {
+         function createtaco2 (x, y) {
         var hitZoneSize = 25;
-        var damagefromtaco = 100000;
+        var damageFromObstacle = 10;
         var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
         sawBladeHitZone.x = x;
         sawBladeHitZone.y = y;
         game.addGameItem(sawBladeHitZone);    
-        var obstacleImage = draw.bitmap('img/taco.png');
+        var obstacleImage = draw.bitmap('img/sawblade.png');
         obstacleImage.x = -25;
         obstacleImage.y = -25;
         sawBladeHitZone.addChild(obstacleImage);
         }
+        
         
         
         
@@ -164,6 +164,7 @@ var level01 = function (window) {
             createclean2(3000, 100);
             createclean2(3500, 100);
 
+ createtaco2(69, 100);
 
         // DO NOT EDIT CODE BELOW HERE
     }
