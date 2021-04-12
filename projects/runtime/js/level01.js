@@ -161,6 +161,7 @@ var level01 = function (window) {
 
          createtaco2(900, 200);
          createtaco2(2000, 200);
+        createReward(630, 200);
         // DO NOT EDIT CODE BELOW HERE
     }
 };
