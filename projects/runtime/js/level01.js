@@ -144,7 +144,7 @@ var level01 = function (window) {
             }
             function createSpikes(x, y, level) {
                 var hitZoneSize = 25;
-                var damageFromObstacle = 10;
+                var damageFromObstacle = 1;
                 var spikeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
                 var obstacleImage;
                 spikeHitZone.x = x;
@@ -170,16 +170,16 @@ var level01 = function (window) {
                     var hammer = draw.bitmap('img/batman.png');
                     hammer.x = 0;
                     hammer.y = 0;
-                    hammer.scaleX = 0.2;
-                    hammer.scaleY = 0.2;
+                    hammer.scaleX = 1;
+                    hammer.scaleY = 1;
                     enemy.rotationalVelocity = -10;
                     enemy.addChild(hammer);
                     enemyOver =  game.createGameItem('enemy',50);
                     var gnome = draw.bitmap('img/bg.gif');
                     gnome.x = 10;
                     gnome.y = -50;
-                    gnome.scaleX = 1;
-                    gnome.scaleY = 1;
+                    gnome.scaleX = 0.2;
+                    gnome.scaleY = 0.2;
                     enemyOver.addChild(gnome);
                     enemyOver.x = x;
                     enemyOver.y = groundY - y;
@@ -190,8 +190,8 @@ var level01 = function (window) {
                     var goomba = draw.bitmap('img/bg.gif');
                     goomba.x = -25;
                     goomba.y = -25;
-                    goomba.scaleX = 1;
-                    goomba.scaleY = 1;
+                    goomba.scaleX = 0.2;
+                    goomba.scaleY = 0.2;
                     enemy.addChild(goomba);
                 }
                 if (level === 3) {
@@ -218,7 +218,7 @@ var level01 = function (window) {
                 }
             }
             function createReward(x, y, level) {
-                var reward = game.createGameItem('reward', 10);
+                var reward = game.createGameItem('reward', 1000);
                 var coin;
                 if (level === 2) {
                     coin = draw.bitmap('img/taco.png');
@@ -236,7 +236,7 @@ var level01 = function (window) {
                 game.addGameItem(reward);
                 reward.velocityX = -2;
                 reward.onPlayerCollision = function() {
-                    game.increaseScore(500);
+                    game.increaseScore(5000);
                     reward.fadeOut();
                 }
             }
