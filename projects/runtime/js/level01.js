@@ -124,7 +124,7 @@ var level01 = function (window) {
             }
             function createSawBlade(x, y, level) {
                 var hitZoneSize = 20;
-                var damageFromObstacle = 10;
+                var damageFromObstacle = 6;
                 var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
                 var obstacleImage;
                 sawBladeHitZone.x = x;
@@ -144,7 +144,7 @@ var level01 = function (window) {
             }
             function createSpikes(x, y, level) {
                 var hitZoneSize = 25;
-                var damageFromObstacle = 1;
+                var damageFromObstacle = 6;
                 var spikeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
                 var obstacleImage;
                 spikeHitZone.x = x;
@@ -164,7 +164,7 @@ var level01 = function (window) {
             }
             
             function createEnemy1(x, y, level) {
-                var enemy =  game.createGameItem('enemy',50);
+                var enemy =  game.createGameItem('enemy',10);
                 var enemyOver;
                 if (level === 1) {
                     var hammer = draw.bitmap('img/batman.png');
@@ -174,7 +174,7 @@ var level01 = function (window) {
                     hammer.scaleY = 1;
                     enemy.rotationalVelocity = -10;
                     enemy.addChild(hammer);
-                    enemyOver =  game.createGameItem('enemy',50);
+                    enemyOver =  game.createGameItem('enemy',10);
                     var gnome = draw.bitmap('img/bg.gif');
                     gnome.x = 10;
                     gnome.y = -50;
@@ -207,7 +207,7 @@ var level01 = function (window) {
                 game.addGameItem(enemy);
                 enemy.velocityX = -2;
                 enemy.onPlayerCollision = function () {
-                    game.changeIntegrity(-30);
+                    game.changeIntegrity(-6);
                     enemy.fadeOut(1000);
                     enemyOver.fadeOut(1000);
                 }
@@ -217,31 +217,24 @@ var level01 = function (window) {
                     enemyOver.shrink();
                 }
             }
-            function createReward(x, y, level) {
-                var reward = game.createGameItem('reward', 1000);
-                var coin;
-                if (level === 2) {
-                    coin = draw.bitmap('img/taco.png');
-                }
-                else {
-                    coin = draw.bitmap('img/taco.png');
-                }
-                coin.x = -32;
-                coin.y = -32;
-                coin.scaleX = 1;
-                coin.scaleY = 1;
-                reward.addChild(coin);
-                reward.x = x;
-                reward.y = y;
-                game.addGameItem(reward);
-                reward.velocityX = -2;
-                reward.onPlayerCollision = function() {
-                    game.increaseScore(5000);
-                    reward.fadeOut();
-                }
+           function createReward (x, y) {
+        var reward = game.createGameItem('reward',25);
+        var greenSquare = draw.rect(50,50,'green');
+        greenSquare.x = -25;
+        greenSquare.y = -25;
+        reward.addChild(greenSquare);
+        reward.x = x;
+        reward.y = y;
+        game.addGameItem(reward);
+        reward.velocityX = -0.75;
+        rotationVelocity = 10;
+
+            reward.onPlayerCollision = function() {
+                game.changeIntegrity(1000);
+                game.increaseScore(100);
+                reward.fadeOut();
             }
-        
-        
+        }
         
         // DO NOT EDIT CODE BELOW HERE
     }
