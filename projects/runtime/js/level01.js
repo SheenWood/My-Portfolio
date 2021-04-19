@@ -132,8 +132,8 @@ var level01 = function (window) {
                 game.addGameItem(sawBladeHitZone);
                 if (level === 2) {
                     obstacleImage = draw.bitmap('images/sawblade.png');
-                    obstacleImage.scaleX = 0.1;
-                    obstacleImage.scaleY = 0.1;
+                    obstacleImage.scaleX = 1;
+                    obstacleImage.scaleY = 1;
                 }
                 else {
                     obstacleImage = draw.bitmap('img/sawblade.png');
@@ -159,8 +159,8 @@ var level01 = function (window) {
                 spikeHitZone.addChild(obstacleImage);
                 obstacleImage.x = -50;
                 obstacleImage.y = -75;
-                obstacleImage.scaleX = 0.2;
-                obstacleImage.scaleY = 0.2;
+                obstacleImage.scaleX = 1;
+                obstacleImage.scaleY = 1;
             }
             
             function createEnemy1(x, y, level) {
@@ -178,8 +178,8 @@ var level01 = function (window) {
                     var gnome = draw.bitmap('img/bg.gif');
                     gnome.x = 10;
                     gnome.y = -50;
-                    gnome.scaleX = 0.2;
-                    gnome.scaleY = 0.2;
+                    gnome.scaleX = 1;
+                    gnome.scaleY = 1;
                     enemyOver.addChild(gnome);
                     enemyOver.x = x;
                     enemyOver.y = groundY - y;
@@ -190,16 +190,16 @@ var level01 = function (window) {
                     var goomba = draw.bitmap('img/bg.gif');
                     goomba.x = -25;
                     goomba.y = -25;
-                    goomba.scaleX = 0.1;
-                    goomba.scaleY = 0.1;
+                    goomba.scaleX = 1;
+                    goomba.scaleY = 1;
                     enemy.addChild(goomba);
                 }
                 if (level === 3) {
                     var koopa = draw.bitmap('img/bg.gif');
                     koopa.x = -25;
                     koopa.y = -25;
-                    koopa.scaleX = 0.1;
-                    koopa.scaleY = 0.1;
+                    koopa.scaleX = 1;
+                    koopa.scaleY = 1;
                     enemy.addChild(koopa);
                 }
                 enemy.x = x;
@@ -228,8 +228,8 @@ var level01 = function (window) {
                 }
                 coin.x = -32;
                 coin.y = -32;
-                coin.scaleX = 0.1;
-                coin.scaleY = 0.1;
+                coin.scaleX = 1;
+                coin.scaleY = 1;
                 reward.addChild(coin);
                 reward.x = x;
                 reward.y = y;
