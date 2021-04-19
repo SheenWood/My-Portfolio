@@ -151,10 +151,10 @@ var level01 = function (window) {
                 spikeHitZone.y = y;
                 game.addGameItem(spikeHitZone);
                 if (level === 2) {
-                    obstacleImage = draw.bitmap('images/batman.png');
+                    obstacleImage = draw.bitmap('img/batman.png');
                 }
                 else {
-                    obstacleImage = draw.bitmap('images/clean.png');
+                    obstacleImage = draw.bitmap('img/clean.png');
                 }
                 spikeHitZone.addChild(obstacleImage);
                 obstacleImage.x = -50;
@@ -167,7 +167,7 @@ var level01 = function (window) {
                 var enemy =  game.createGameItem('enemy',50);
                 var enemyOver;
                 if (level === 1) {
-                    var hammer = draw.bitmap('assets/hammer.png');
+                    var hammer = draw.bitmap('img/batman.png');
                     hammer.x = 0;
                     hammer.y = 0;
                     hammer.scaleX = 0.2;
@@ -175,7 +175,7 @@ var level01 = function (window) {
                     enemy.rotationalVelocity = -10;
                     enemy.addChild(hammer);
                     enemyOver =  game.createGameItem('enemy',50);
-                    var gnome = draw.bitmap('assets/gnome.png');
+                    var gnome = draw.bitmap('img/bg.gif');
                     gnome.x = 10;
                     gnome.y = -50;
                     gnome.scaleX = 0.2;
@@ -187,7 +187,7 @@ var level01 = function (window) {
                     enemyOver.velocityX = -2;
                 }
                 if (level === 2) {
-                    var goomba = draw.bitmap('assets/feaux_goomb.png');
+                    var goomba = draw.bitmap('img/bg.gif');
                     goomba.x = -25;
                     goomba.y = -25;
                     goomba.scaleX = 0.1;
@@ -195,7 +195,7 @@ var level01 = function (window) {
                     enemy.addChild(goomba);
                 }
                 if (level === 3) {
-                    var koopa = draw.bitmap('assets/feaux_koop.png');
+                    var koopa = draw.bitmap('img/bg.gif');
                     koopa.x = -25;
                     koopa.y = -25;
                     koopa.scaleX = 0.1;
@@ -221,10 +221,10 @@ var level01 = function (window) {
                 var reward = game.createGameItem('reward', 10);
                 var coin;
                 if (level === 2) {
-                    coin = draw.bitmap('assets/feaux_coin.png');
+                    coin = draw.bitmap('img/taco.png');
                 }
                 else {
-                    coin = draw.bitmap('assets/coin.png');
+                    coin = draw.bitmap('img/taco.png');
                 }
                 coin.x = -32;
                 coin.y = -32;
