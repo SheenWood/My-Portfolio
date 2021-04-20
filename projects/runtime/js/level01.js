@@ -159,7 +159,7 @@ var level01 = function (window) {
                 spikeHitZone.y = y;
                 game.addGameItem(spikeHitZone);
                 if (level === 2) {
-                    obstacleImage = draw.bitmap('img/batman.png');
+                    obstacleImage = draw.bitmap('img/clean.png');
                 }
                 else {
                     obstacleImage = draw.bitmap('img/clean.png');
@@ -167,8 +167,8 @@ var level01 = function (window) {
                 spikeHitZone.addChild(obstacleImage);
                 obstacleImage.x = -50;
                 obstacleImage.y = -75;
-                obstacleImage.scaleX = 1;
-                obstacleImage.scaleY = 1;
+                obstacleImage.scaleX = .5;
+                obstacleImage.scaleY = .7;
             }
             
             function createEnemy1(x, y, level) {
@@ -195,15 +195,15 @@ var level01 = function (window) {
                     enemyOver.velocityX = -2;
                 }
                 if (level === 2) {
-                    var goomba = draw.bitmap('img/bg.gif');
+                    var goomba = draw.bitmap('img/taco.png');
                     goomba.x = -25;
                     goomba.y = -25;
-                    goomba.scaleX = 0.2;
-                    goomba.scaleY = 0.2;
+                    goomba.scaleX = 1;
+                    goomba.scaleY = 1;
                     enemy.addChild(goomba);
                 }
                 if (level === 3) {
-                    var koopa = draw.bitmap('img/bg.gif');
+                    var koopa = draw.bitmap('img/batman.png');
                     koopa.x = -25;
                     koopa.y = -25;
                     koopa.scaleX = 1;
