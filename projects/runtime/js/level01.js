@@ -15,7 +15,7 @@ var level01 = function (window) {
         var levelData = {
             "name": "Robot Romp",
             "number": 1, 
-            "speed": 9,
+            "speed": 1,
             "gameItems": [
                 
                 { "type": "sawblade", "x": 400, "y": 100 },
