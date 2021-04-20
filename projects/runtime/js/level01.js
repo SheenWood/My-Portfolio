@@ -168,7 +168,7 @@ var level01 = function (window) {
                 obstacleImage.x = -50;
                 obstacleImage.y = -75;
                 obstacleImage.scaleX = .5;
-                obstacleImage.scaleY = .7;
+                obstacleImage.scaleY = .6;
             }
             
             function createEnemy1(x, y, level) {
