@@ -102,6 +102,10 @@ var level01 = function (window) {
                   if (currItem.type === 'enmy3') {
                       createEnemy1(currItem.x, currItem.y, 3);
                   }
+                    
+                  if (currItem.type === 'E') {
+                      createEnemy1(currItem.x, currItem.y, 3);
+                  }
                   if (currItem.type === 'reward') {
                       createReward(currItem.x, (groundY - currItem.y), 2);
                   }
@@ -142,6 +146,32 @@ var level01 = function (window) {
                 obstacleImage.x = -25;
                 obstacleImage.y = -25;
             }
+        
+        
+              
+          function createE (x, y) {
+        var enemy = game.createGameItem('enemy',25);
+        var redSquare = draw.rect(50,50,'red');
+        redSquare.x = -25;
+        redSquare.y = -25;
+        enemy.addChild(redSquare);
+        enemy.x = x;
+        enemy.y = y;
+        game.addGameItem(enemy);
+        enemy.velocityX = -1;
+        rotationVelocity = 10;
+
+            enemy.onPlayerCollision = function() {
+                game.changeIntegrity(-10);
+            };
+            enemy.onProjectileCollision = function() {
+                enemy.fadeOut();
+            game.increaseScore(100);
+            }
+        }
+        
+        
+        
             function createSpikes(x, y, level) {
                 var hitZoneSize = 25;
                 var damageFromObstacle = 6;
@@ -238,27 +268,7 @@ var level01 = function (window) {
         
         
         
-        
-          function createE (x, y) {
-        var enemy = game.createGameItem('enemy',25);
-        var redSquare = draw.rect(50,50,'red');
-        redSquare.x = -25;
-        redSquare.y = -25;
-        enemy.addChild(redSquare);
-        enemy.x = x;
-        enemy.y = y;
-        game.addGameItem(enemy);
-        enemy.velocityX = -1;
-        rotationVelocity = 10;
-
-            enemy.onPlayerCollision = function() {
-                game.changeIntegrity(-10);
-            };
-            enemy.onProjectileCollision = function() {
-                enemy.fadeOut();
-            game.increaseScore(100);
-            }
-        }
+  
 
         function createReward (x, y) {
         // DO NOT EDIT CODE BELOW HERE
