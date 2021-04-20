@@ -15,7 +15,7 @@ var level01 = function (window) {
         var levelData = {
             "name": "Robot Romp",
             "number": 1, 
-            "speed": -3,
+            "speed": 9,
             "gameItems": [
                 
                 { "type": "sawblade", "x": 400, "y": 100 },
@@ -31,7 +31,7 @@ var level01 = function (window) {
                 { "type": "enmy1", "x": 4000, "y": 90},
                 { "type": "spikes", "x": 4250},
                 { "type": "reward", "x": 4650},
-                
+                 { "type": "E", "x": 4960, "y": 90},
                
                 { "type": "sawblade", "x": 5500, "y": 100, "level": 2},
                 { "type": "enmy2", "x": 5600, "y": 25, "level": 2},
@@ -236,6 +236,31 @@ var level01 = function (window) {
             }
         }
         
+        
+        
+        
+          function createE (x, y) {
+        var enemy = game.createGameItem('enemy',25);
+        var redSquare = draw.rect(50,50,'red');
+        redSquare.x = -25;
+        redSquare.y = -25;
+        enemy.addChild(redSquare);
+        enemy.x = x;
+        enemy.y = y;
+        game.addGameItem(enemy);
+        enemy.velocityX = -1;
+        rotationVelocity = 10;
+
+            enemy.onPlayerCollision = function() {
+                game.changeIntegrity(-10);
+            };
+            enemy.onProjectileCollision = function() {
+                enemy.fadeOut();
+            game.increaseScore(100);
+            }
+        }
+
+        function createReward (x, y) {
         // DO NOT EDIT CODE BELOW HERE
     }
 };
