@@ -167,8 +167,8 @@ var level01 = function (window) {
                 spikeHitZone.addChild(obstacleImage);
                 obstacleImage.x = -50;
                 obstacleImage.y = -75;
-                obstacleImage.scaleX = 1;
-                obstacleImage.scaleY = .2;
+                obstacleImage.scaleX = .8;
+                obstacleImage.scaleY = .6;
             }
             
             function createEnemy1(x, y, level) {
