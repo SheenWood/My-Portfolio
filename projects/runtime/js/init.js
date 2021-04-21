@@ -36,7 +36,8 @@ var init = function (window) {
     view.addChild(background);
     
     var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct! IF PLAYER DOES NOT LOAD REFRESH PAGE '
- <br>                            , 
+                      , 
+                              <br>
         '15px Arial',
         '#ccc', 'left');
      var hints = draw.textfield('avoid squidward, mr clean, batman, tacobell, the rainbow block. touch the green block to get health.'
