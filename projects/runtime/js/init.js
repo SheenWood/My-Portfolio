@@ -35,12 +35,17 @@ var init = function (window) {
     var background = opspark.makeBackground(app,ground);
     view.addChild(background);
     
-    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct! IF PLAYER DOES NOT LOAD REFRESH PAGE', 
+    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct! IF PLAYER DOES NOT LOAD REFRESH PAGE'
+                             , 
+        '15px Arial',
+        '#ccc', 'left');
+     var hints = draw.textfield('avoid squidward, mr clean, batman, tacobell, the rainbow block. touch the green block to get health.'
+                             , 
         '15px Arial',
         '#ccc', 'left');
    
-    help.x = 10;
-    help.y = ground.y + ground.getBounds().height + 10;
+    hints.x = 20;
+    hints.y = ground.y + ground.getBounds().height + 20;
     view.addChild(help);
     
     window.opspark.makeSpriteSheet(data)
