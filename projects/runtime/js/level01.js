@@ -28,7 +28,7 @@ var level01 = function (window) {
                 { "type": "reward", "x": 3000},
                 { "type": "sawblade", "x": 3750, "y": 100 },
                 { "type": "sawblade", "x": 3850, "y": 100 },
-                { "type": "enmy", "x": 4000, "y": 200},
+                { "type": "enmy1", "x": 4000, "y": 200},
                 { "type": "spikes", "x": 4250},
                 { "type": "reward", "x": 4650},
                 
@@ -171,7 +171,7 @@ var level01 = function (window) {
                 obstacleImage.scaleY = .6;
             }
             
-         /*   function createEnemy1(x, y, level) {
+          function createEnemy1(x, y, level) {
                 var enemy =  game.createGameItem('enemy',10);
                 var enemyOver;
                 if (level === 1) {
@@ -193,32 +193,12 @@ var level01 = function (window) {
                     enemyOver.y = groundY - y;
                     game.addGameItem(enemyOver);
                     enemyOver.velocityX = -2;
-                }*/
+                }
         
         
         //some enemy things
         
-         function createEnemy (x, y) {
-        var enemy = game.createGameItem('enemy',25);
-        var frown = draw.bitmap('img/batman.png');
-        frown.x = -25;
-        frown.y = -25;
-        enemy.addChild(frown);
-        enemy.x = x;
-        enemy.y = y;
-        game.addGameItem(enemy);
-        enemy.velocityX = -1;
-        rotationVelocity = 10;
-
-            enemy.onPlayerCollision = function() {
-                game.changeIntegrity(-10);
-            };
-            enemy.onProjectileCollision = function() {
-                enemy.fadeOut();
-            game.increaseScore(100);
-            }
-        }
-        //bruh
+   
         
         
         
