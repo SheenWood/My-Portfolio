@@ -175,7 +175,7 @@ var level01 = function (window) {
                 var enemy =  game.createGameItem('enemy',10);
                 var enemyOver;
                 if (level === 1) {
-                    var hammer = draw.bitmap('img/batman.png');
+                    var hammer = draw.bitmap('img/bg.gif');
                     hammer.x = 0;
                     hammer.y = 0;
                     hammer.scaleX = 1;
@@ -183,11 +183,11 @@ var level01 = function (window) {
                     enemy.rotationalVelocity = -10;
                     enemy.addChild(hammer);
                     enemyOver =  game.createGameItem('enemy',10);
-                    var gnome = draw.bitmap('img/bg.gif');
+                    var gnome = draw.bitmap('img/batman.png');
                     gnome.x = 10;
                     gnome.y = -50;
-                    gnome.scaleX = 0.2;
-                    gnome.scaleY = 0.2;
+                    gnome.scaleX = 1;
+                    gnome.scaleY = 1;
                     enemyOver.addChild(gnome);
                     enemyOver.x = x;
                     enemyOver.y = groundY - y;
