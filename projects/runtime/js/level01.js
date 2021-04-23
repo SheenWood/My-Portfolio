@@ -18,8 +18,8 @@ var level01 = function (window) {
             "speed": 1,
             "gameItems": [
                 
-                { "type": "sawblade", "x": 400, "y": 100 },
-                { "type": "sawblade", "x": 600, "y": 100 },
+                { "type": "sawblade", "x": 1400, "y": 100 },
+                { "type": "sawblade", "x": 1600, "y": 100 },
                 { "type": "sawblade", "x": 3050, "y": 100 },
                 { "type": "sawblade", "x": 1900, "y": 100 },
                 { "type": "spikes", "x": 1050},
