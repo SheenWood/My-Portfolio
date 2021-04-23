@@ -22,7 +22,7 @@ var level01 = function (window) {
                 { "type": "sawblade", "x": 1600, "y": 100 },
                 { "type": "sawblade", "x": 3050, "y": 100 },
                 { "type": "sawblade", "x": 1900, "y": 100 },
-                { "type": "spikes", "x": 1050},
+              
                 { "type": "spikes", "x": 1650},
                 { "type": "spikes", "x": 2550},
                 { "type": "reward", "x": 3000},
