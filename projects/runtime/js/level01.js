@@ -16,12 +16,12 @@ var level01 = function (window) {
             "number": 1, 
             "speed": -3,
             "gameItems": [
-                { "type": "sawblade", "x": 1200, "y": groundY / 8 },
-                { "type": "sawblade", "x": 1400, "y": groundY / 8  },
-                { "type": "sawblade", "x": 1600, "y": groundY / 8  },
-                { "type": "reward", "x": 1500, "y": groundY / 8 },
-                { "type": "enemy", "x": 1250, "y": groundY / 8 },
-                { "type": "clean", "x": 1000, "y": groundY / 8 },
+                { "type": "sawblade", "x": 1200, "y": 100 },
+                { "type": "sawblade", "x": 1400, "y": 100  },
+                { "type": "sawblade", "x": 1600, "y": 100  },
+                { "type": "reward", "x": 1500, "y": 100 },
+                { "type": "enemy", "x": 1250, "y": 50 },
+                { "type": "clean", "x": 1000, "y": 30 },
             ]
         };
         
