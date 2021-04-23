@@ -45,7 +45,7 @@ var init = function (window) {
         '15px Arial',
         '#ccc', 'left');
    
-    hints.x = 30;
+    hints.x = 50;
     hints.y = ground.y + ground.getBounds().height + 30;
     
      help.x = 10;
