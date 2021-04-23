@@ -42,7 +42,7 @@ var init = function (window) {
         '#ccc', 'left');
      var hints = draw.textfield('avoid squidward, mr clean, batman, tacobell, the rainbow block. touch the green block to get health.'
                              , 
-        '15px Arial',
+        '30px Arial',
         '#ccc', 'left');
    
     hints.x = 30;
