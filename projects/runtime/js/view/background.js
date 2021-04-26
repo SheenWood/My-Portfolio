@@ -47,14 +47,14 @@ var background = function (window) {
                 moon.scaleY = 1;
             background.addChild(moon);
             
-            var loopsCompleted = 0; 
-            while (loopsCompleted < 1) {
-            var circle = draw.circle(50,'white','LightGray',2);
+              var circle;
+            for (var i = 0; i < 150; i++) {
+            circle = draw.circle( 1, 'white', 'LightGray', 2);
             circle.x = canvasWidth*Math.random();
             circle.y = groundY*Math.random();
             background.addChild(circle);
-            loopsCompleted++
             }
+            
             // TODO 5: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             var color = "#" + ((1<<24)*Math.random() | 0).toString(16)
             for(var i = 0; i < 7; ++i) {
