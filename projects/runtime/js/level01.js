@@ -137,8 +137,8 @@ var level01 = function (window) {
                 game.addGameItem(sawBladeHitZone);
                 if (level === 2) {
                     obstacleImage = draw.bitmap('img/sawblade.png');
-                    obstacleImage.scaleX = 0.1;
-                    obstacleImage.scaleY = 0.1;
+                    obstacleImage.scaleX = 1;
+                    obstacleImage.scaleY = 1;
                 }
                 else {
                     obstacleImage = draw.bitmap('img/sawblade.png');
@@ -175,8 +175,8 @@ var level01 = function (window) {
                 spikeHitZone.addChild(obstacleImage);
                 obstacleImage.x = -50;
                 obstacleImage.y = -75;
-                obstacleImage.scaleX = 1;
-                obstacleImage.scaleY = 1;
+                obstacleImage.scaleX = 0.2;
+                obstacleImage.scaleY = 0.2;
             }
             
          
