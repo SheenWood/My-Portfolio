@@ -120,6 +120,13 @@ var level01 = function (window) {
               }
               
             }
+        
+        
+        
+        
+        
+        
+        
             function createSawBlade(x, y, level) {
                 var hitZoneSize = 20;
                 var damageFromObstacle = 10;
@@ -140,6 +147,17 @@ var level01 = function (window) {
                 obstacleImage.x = -25;
                 obstacleImage.y = -25;
             }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
             function createSpikes(x, y, level) {
                 var hitZoneSize = 25;
                 var damageFromObstacle = 10;
@@ -157,11 +175,19 @@ var level01 = function (window) {
                 spikeHitZone.addChild(obstacleImage);
                 obstacleImage.x = -50;
                 obstacleImage.y = -75;
-                obstacleImage.scaleX = 0.2;
-                obstacleImage.scaleY = 0.2;
+                obstacleImage.scaleX = 1;
+                obstacleImage.scaleY = 1;
             }
             
          
+        
+        
+        
+        
+        
+        
+        
+        
             function createReward(x, y, level) {
                 var reward = game.createGameItem('reward', 10);
                 var hp;
@@ -185,6 +211,18 @@ var level01 = function (window) {
                     reward.fadeOut();
                 }
             }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
