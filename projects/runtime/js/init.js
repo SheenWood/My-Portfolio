@@ -40,18 +40,13 @@ var init = function (window) {
                               
         '15px Arial',
         '#ccc', 'left');
-     var hints = draw.textfield('avoid squidward, mr clean, batman, tacobell, the rainbow block. touch the green block to get health.'
-                             , 
-        '15px Arial',
-        '#ccc', 'left');
    
-    hints.x = 50;
-    hints.y = ground.y + ground.getBounds().height + 30;
-    
+   
+   
      help.x = 10;
     help.y = ground.y + ground.getBounds().height + 10;
     view.addChild(help);
-      view.addChild(hints);
+    
     
     window.opspark.makeSpriteSheet(data)
         .then(function (ss) {
