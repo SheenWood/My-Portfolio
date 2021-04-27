@@ -204,7 +204,7 @@ var level01 = function (window) {
 
             reward.onPlayerCollision = function() {
                 game.changeIntegrity(100);
-                game.increaseScore(1);
+                game.increaseScore(500);
                 reward.fadeOut();
             }
         }
