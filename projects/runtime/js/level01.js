@@ -105,7 +105,7 @@ var level01 = function (window) {
                   if (currItem.type === 'reward') {
                       createReward(currItem.x, (groundY - currItem.y), 2);
                   }
-              
+              }
               else {
                   if (currItem.type === 'sawblade') {
                     createSawBlade(currItem.x, (groundY - currItem.y));
