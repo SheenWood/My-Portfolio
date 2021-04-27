@@ -105,7 +105,7 @@ var level01 = function (window) {
                   if (currItem.type === 'reward') {
                       createReward(currItem.x, (groundY - currItem.y), 2);
                   }
-              }
+              
               else {
                   if (currItem.type === 'sawblade') {
                     createSawBlade(currItem.x, (groundY - currItem.y));
@@ -188,29 +188,26 @@ var level01 = function (window) {
         
         
         
-            function createReward(x, y, level) {
-                var reward = game.createGameItem('reward', 10);
-                var hp;
-                if (level === 2) {
-                    coin = draw.bitmap('img/hp.png');
-                }
-                else {
-                    coin = draw.bitmap('img/hp.png');
-                }
-                coin.x = -32;
-                coin.y = -32;
-                coin.scaleX = 1;
-                coin.scaleY = 1;
-                reward.addChild(hp);
-                reward.x = x;
-                reward.y = y;
-                game.addGameItem(reward);
-                reward.velocityX = -2;
-                reward.onPlayerCollision = function() {
-                    game.increaseScore(500);
-                    reward.fadeOut();
-                }
+             function createReward (x, y) {
+            var reward = game.createGameItem('reward',25);
+            var smile = draw.bitmap('img/hp.png');
+            smile.x = -25;
+            smile.y = -25;
+            smile.scaleX = 0.3;
+            smile.scaleY = 0.3;
+            reward.addChild(smile);
+            reward.x = x;
+            reward.y = y;
+            game.addGameItem(reward);
+            reward.velocityX = -1.5;
+            rotationVelocity = 10;
+
+            reward.onPlayerCollision = function() {
+                game.changeIntegrity(100);
+                game.increaseScore(1);
+                reward.fadeOut();
             }
+        }
         
         
         
