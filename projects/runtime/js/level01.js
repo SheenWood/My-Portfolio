@@ -96,11 +96,11 @@ var level01 = function (window) {
                   if (currItem.type === 'spikes') {
                       createSpikes(currItem.x, (groundY - 25), 2);
                   }
-                  if (currItem.type === 'enmy2') {
-                      createEnmy(currItem.x, currItem.y, 2);
+                  if (currItem.type === 'enemy2') {
+                      createEnemy(currItem.x, currItem.y, 2);
                   }
-                  if (currItem.type === 'enmy3') {
-                      createEnmycurrItem.x, currItem.y, 3);
+                  if (currItem.type === 'enemy3') {
+                      createEnemycurrItem.x, currItem.y, 3);
                   }
                   if (currItem.type === 'reward') {
                       createReward(currItem.x, (groundY - currItem.y), 2);
