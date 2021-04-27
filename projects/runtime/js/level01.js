@@ -28,11 +28,11 @@ var level01 = function (window) {
                 { "type": "reward", "x": 3000},
                 { "type": "sawblade", "x": 3750, "y": 100 },
                 { "type": "sawblade", "x": 3850, "y": 100 },
-               
+                { "type": "enmy", "x": 6750, "y": 25 },
                 { "type": "spikes", "x": 4250},
                 { "type": "reward", "x": 4650},
                 
-                //level 2 (feaux mario 1-1)
+                //level 2 
                 { "type": "sawblade", "x": 5500, "y": 100, "level": 2},
                 { "type": "enmy2", "x": 5600, "y": 25, "level": 2},
                 { "type": "sawblade", "x": 5650, "y": 100, "level": 2},
@@ -97,10 +97,10 @@ var level01 = function (window) {
                       createSpikes(currItem.x, (groundY - 25), 2);
                   }
                   if (currItem.type === 'enmy2') {
-                      createEnemy2(currItem.x, currItem.y, 2);
+                      createEnmy(currItem.x, currItem.y, 2);
                   }
                   if (currItem.type === 'enmy3') {
-                      createEnemy1(currItem.x, currItem.y, 3);
+                      createEnmycurrItem.x, currItem.y, 3);
                   }
                   if (currItem.type === 'reward') {
                       createReward(currItem.x, (groundY - currItem.y), 2);
