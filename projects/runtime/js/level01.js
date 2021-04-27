@@ -44,7 +44,7 @@ var level01 = function (window) {
                 { "type": "sawblade", "x": 5800, "y": 200, "level": 2},
                 { "type": "sawblade", "x": 5850, "y": 100, "level": 2},
                 { "type": "spikes", "x": 6000, "level": 2},
-                { "type": "enmy2", "x": 6200,, "y": 100 "level": 2},
+                { "type": "enmy2", "x": 6200, "y": 100 "level": 2},
                 { "type": "spikes", "x": 6300, "level": 2},
                 { "type": "enmy2", "x": 6700, "y": 100 "level": 2},
                 { "type": "enmy2", "x": 6750, "y": 100 "level": 2},
