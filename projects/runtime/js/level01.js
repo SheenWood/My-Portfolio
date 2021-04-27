@@ -28,7 +28,7 @@ var level01 = function (window) {
                 { "type": "reward", "x": 3000},
                 { "type": "sawblade", "x": 3750, "y": 100 },
                 { "type": "sawblade", "x": 3850, "y": 100 },
-                { "type": "enmy2", "x": 6750, "y": 25 },
+               
                 { "type": "spikes", "x": 4250},
                 { "type": "reward", "x": 4650},
                 
