@@ -152,7 +152,27 @@ var level01 = function (window) {
         
         
         
-        
+            function createEnmy (x, y) {
+            var hitZoneSize = 25;
+            var damageFromObstacle = 10;
+            var EnmyHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+            EnmyHitZone.x = x;
+            EnmyHitZone.y = y;
+            EnmyHitZone.scaleX = 0.25;
+            EnmyHitZone.scaleY = 0.25;
+            game.addGameItem(EnmyHitZone);    
+            var obstacleImage = draw.bitmap('img/enmy.png');
+            obstacleImage.x = -24;
+            obstacleImage.y = -32;
+            EnmyHitZone.addChild(obstacleImage);
+
+            EnmyHitZone.onPlayerCollision = function() {
+                game.changeIntegrity(-10);
+            };
+            EnmyHitZone.onProjectileCollision = function() {
+                EnmyHitZone.fadeOut();
+            }
+        }
         
         
         
