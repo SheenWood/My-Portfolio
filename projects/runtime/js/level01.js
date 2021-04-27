@@ -97,7 +97,7 @@ var level01 = function (window) {
                       createSpikes(currItem.x, (groundY - 25), 2);
                   }
                   if (currItem.type === 'enmy2') {
-                      createEnemy2(currItem.x, currItem.y, 2);
+                      createEnmy(currItem.x, currItem.y, 2);
                   }
                   if (currItem.type === 'enemy3') {
                       createEnemy1(currItem.x, currItem.y, 3);
